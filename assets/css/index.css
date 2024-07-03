@@ -1,0 +1,70 @@
+.header {
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+.header__announcement {
+  background: #700909;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header__announcement__text {
+  color: white;
+}
+
+.header__profile {
+  background: linear-gradient(180deg, #bf1313 0%, #700909 88.02%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.header__profile__item {
+  color: white;
+}
+
+.header__profile__item__credits {
+  color: #e7c34b;
+}
+
+.circle-box-logo {
+  @apply w-[80px] h-[80px] rounded-full  p-1;
+  border: 2px solid white;
+}
+.box-credit {
+  @apply relative mt-4 md:mt-0 rounded-lg p-4  w-full;
+  border: 1px solid white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee > * {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+html,
+body {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  color:black;
+}
